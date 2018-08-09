@@ -40,10 +40,10 @@ p {
 #socialmediabar img {
   display: inline-block;
   float: right;
-  height: 2em;
+  height: 1.8em;
   margin: 0;
   padding: 0.1em 0.1em;
-  width: 2em;
+  width: 1.8em;
 }
 
 #socialmediabar img:hover {
@@ -89,6 +89,14 @@ p {
 #section-a {
   background-color: #3f5468;
   color: white;
+}
+
+#section-a h2 {
+  padding: 1em 1em;
+}
+
+#section-a p {
+  padding: 1em 1em 2em 1em;
 }
 
 /*Section B*/
@@ -298,6 +306,7 @@ iframe {
   }
   #section-c>div {
     display: block;
+    margin-bottom: 2em;
   }
   #section-c img {
     float: left;

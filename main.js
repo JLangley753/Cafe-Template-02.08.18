@@ -14,7 +14,4 @@ function showSlides() {
     setTimeout(showSlides, 9000);
   }
 
-$('.section-b img').on('click', function() {
-
-})
 });
