@@ -110,7 +110,33 @@ p {
   background-color: #b8e4c9;
   padding: 0 1em;
   text-align: left;
-  ;
+}
+
+#b1img {
+  height: auto;
+  overflow: hidden;
+  width: 100%;
+}
+
+#b2img {
+  height: auto;
+  overflow: hidden;
+  width: 100%;
+}
+
+a img {
+  -webkit-transition: -webkit-transform 0.3s ease;
+  -moz-transition: -moz-transform 0.3s ease;
+  -o-transition: -o-transform 0.3s ease;
+  transition: transform 0.3s ease;
+}
+
+a img:hover {
+  -webkit-transform: scale(1.05);
+  -moz-transform: scale(1.05);
+  -ms-transform: scale(1.05);
+  -o-transform: scale(1.05);
+  transform: scale(1.05);
 }
 
 /*Gallery*/
