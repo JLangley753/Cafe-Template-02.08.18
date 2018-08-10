@@ -71,6 +71,7 @@ p {
 #logo:hover {
   opacity: 0.65;
 }
+
 /*Title*/
 
 #title {
@@ -103,6 +104,11 @@ p {
 
 .title-text p {
   padding: 0;
+}
+
+.title-text img {
+  height: 2em;
+  width: 2em;
 }
 
 /*Section A*/
