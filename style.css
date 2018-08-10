@@ -67,6 +67,10 @@ p {
   float: left;
   padding: 0.2em 0em;
 }
+
+#logo:hover {
+  opacity: 0.65;
+}
 /*Title*/
 
 #title {
