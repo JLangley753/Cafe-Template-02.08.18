@@ -4,7 +4,7 @@ body {
   background-color: #f4f9f4;
   color: #616161;
   display: block;
-  font-family: Helvetica, sans-serif;
+  font-family: 'Quicksand', sans-serif;
   font-size: 1.1em;
   line-height: 1.5;
   margin: 0;
@@ -57,15 +57,16 @@ p {
 #logo img {
   color: #616161;
   float: left;
-  padding: 0.1em 0.2em;
-  height: 1.8em;
-  width: 1.8em;
+  padding: 0em 0.2em;
+  height: 1.7em;
+  width: 1.7em;
 }
 
 #logo p {
   color: #616161;
+  font-size: 1.1em;
   float: left;
-  padding: 0.2em 0em;
+  padding: 0.1em 0em;
 }
 
 #logo:hover {
@@ -96,6 +97,7 @@ p {
 }
 
 .title-text h1 {
+  display: inline-block;
   font-size: 3em;
   padding-top: 100px;
   padding-bottom: 0;
@@ -107,8 +109,9 @@ p {
 }
 
 .title-text img {
-  height: 2em;
-  width: 2em;
+  display: inline-block;
+  height: 2.5em;
+  width: 2.5em;
 }
 
 /*Section A*/
@@ -152,14 +155,14 @@ p {
   width: 100%;
 }
 
-a img {
+#bimg img {
   -webkit-transition: -webkit-transform 0.3s ease;
   -moz-transition: -moz-transform 0.3s ease;
   -o-transition: -o-transform 0.3s ease;
   transition: transform 0.3s ease;
 }
 
-a img:hover {
+#bimg img:hover {
   -webkit-transform: scale(1.05);
   -moz-transform: scale(1.05);
   -ms-transform: scale(1.05);
@@ -246,6 +249,7 @@ iframe {
 
 .submissionbox {
   border: 1px solid #616161;
+  font-family: 'Quicksand', sans-serif;
   box-sizing: border-box;
   display: inline-block;
   margin: 2px 0;
@@ -255,7 +259,7 @@ iframe {
 
 .detailsbox {
   border: 1px solid #616161;
-  font-family: Helvetica, sans-serif;
+  font-family: 'Quicksand', sans-serif;
   height: 60px;
   resize: none;
   margin: 2px 0;
@@ -268,7 +272,7 @@ iframe {
   background-color: white;
   color: #616161;
   border: 0;
-  font-family: Helvetica, sans-serif;
+  font-family: 'Quicksand', sans-serif;
   padding: 6px;
   width: 10%;
 }
@@ -320,18 +324,28 @@ iframe {
     margin-bottom: 2em;
     margin-left: auto;
     margin-right: auto;
-    width: 70%;
+    width: 75%;
   }
-  #socialmediabar img {
+  #logo img {
+    padding: 0;
+  }
+  #logo p {
+    padding: 0;
+  }
+  #socialmedia img {
     height: 1.6em;
     padding: 0.1em 0.3em;
     width: 1.6em;
   }
-  #socialmediabar p {
+  #socialmedia p {
     padding: 0.2em 0;
   }
-  #title h1 {
+  .title-text h1 {
     font-size: 5em;
+  }
+  .title-text img {
+    height: 3.9em;
+    width: 3.9em;
   }
   #title {
     margin-bottom: 2em;
@@ -353,13 +367,13 @@ iframe {
   #gallery {
     margin-left: auto;
     margin-right: auto;
-    width: 70%;
+    width: 75%;
   }
 }
 
 @media (min-width: 1200px) {
   #section-b {
-    grid-gap: 2em;
+    grid-gap: 1em;
   }
   .submissionbox {
     width: 40%;
