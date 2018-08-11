@@ -361,7 +361,7 @@ iframe {
   #section-c img {
     float: left;
     height: auto;
-    margin: 0 1.5em 0em 0;
+    margin: 0 1.5em 1em 0;
     width: 50%;
   }
   #gallery {
