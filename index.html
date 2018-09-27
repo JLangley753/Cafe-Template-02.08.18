@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <link rel="stylesheet" href="style.css">
-  <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
+  <!--  <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet"> -->
   <title>Joe's Cafe</title>
 </head>
 
@@ -14,36 +14,48 @@
 
   <!--Header-->
   <div id="top"></div>
-  <div id="socialmediabar">
-    <div id="logo">
-      <a href="#top"><img src="/assets/img/bean.png" alt="joescafebean"><p>Joe's Cafe</p></a>
-    </div>
-    <div id="socialmedia">
-      <a href="https://twitter.com/" target="_blank"><img src="/assets/img/tw.png" alt="twitter"></a>
-      <a href="https://instagram.com/" target="_blank"><img src="/assets/img/ig.png" alt="instagram"></a>
-      <a href="https://facebook.com/" target="_blank"><img src="/assets/img/fb.png" alt="facebook"></a>
+  <div class="socialmediabar">
+    <div class="topbar">
+      <div class="logo">
+        <a href="#top"><img src="/assets/img/bean.png" alt="joescafebean"></a>
+      </div>
+      <div class="linkbar">
+        <a href="#menu" class="linkbaritem linkbarmenu">Menu</a>
+        <a href="#gallery" class="linkbaritem linkbargal">Gallery</a>
+        <a href="#info" class="linkbaritem linkbarinf">Info</a>
+        <a href="#contact" class="linkbaritem linkbarcont">Contact</a>
+      </div>
+      <div class="socialmedia">
+        <a href="https://twitter.com/" target="_blank"><img src="/assets/img/tw.png" alt="twitter"></a>
+        <a href="https://instagram.com/" target="_blank"><img src="/assets/img/ig.png" alt="instagram"></a>
+        <a href="https://facebook.com/" target="_blank"><img src="/assets/img/fb.png" alt="facebook"></a>
+      </div>
     </div>
   </div>
 
-  <div id="title">
+  <section class="title">
     <div class="background-image"></div>
     <div class="title-text">
       <img src="/assets/img/whitebean.png" alt="joescafebean">
       <h1>Joe's Cafe </h1>
       <p>We love a cup of Joe!</p>
     </div>
-  </div>
+    <div class="barswitch"></div>
+  </section>
 
   <!--Main Section-->
-  <div id="section-a" class="content">
+  <section class="section-a content">
     <h2>What we do</h2>
     <p>At Joe's, we make the coffee experience around you. Extra shot? No problem. Organic oat milk? You got it! Freshly ground decaf beans? Of course!</p>
     <p>We want you to know what you're getting, so click on any of the sections below to find out more!</p>
-  </div>
+  </section>
 
-  <div class="menu content">
+  <div class="switchbar" id="menu"></div>
+  <section class="menu content">
     <div class="menutitle">
-      <h2>Our menu</h2></div>
+      <h1>Our menu</h1>
+      <p class="flipme"><img src="/assets/img/arrow.png" alt="" class="chevron"></p>
+    </div>
     <div class="menuhide">
       <div class="menuitems">
         <h3>Drinks</h3>
@@ -66,34 +78,35 @@
         </div>
       </div>
     </div>
-  </div>
+  </section>
 
-  <div id="section-b" class="content">
-    <div class="b1" id="b1">
+<div class="switcher" id="menuoff"></div>
+  <section class="section-b content">
+    <div class="b1">
       <h2>Fresh, ethically sourced ingredients</h2>
-      <section id="bimg">
+      <div class="bimg">
         <a href="#c1"><img src="/assets/img/coffeebeans-1-min.jpg" alt="coffee beans"></a>
         <p>We get our single origin coffee from suppliers we trust from sustainable farms across the world. These are then roasted, packaged and then made into your drink within a week.</p>
-      </section>
+      </div>
     </div>
-    <div class="b3" id="b3">
+    <div class="b3">
       <h2>Delicious, local food</h2>
-      <section id="bimg">
+      <div class="bimg">
         <a href="#c3"><img src="/assets/img/cake-1-min.jpg" alt="cake"></a>
         <p>Local speciality bakers deliver their fresh goods to us daily so you get top quality food the day it's made. Our sandwiches and snacks are made on the premise every day with the best ingredients.</p>
-      </section>
+      </div>
     </div>
-    <div class="b2" id="b2">
+    <div class="b2">
       <h2>Expertly prepared drinks</h2>
-      <section id="bimg">
+      <div class="bimg">
         <a href="#c2"><img src="/assets/img/latteart-1-min.jpg" alt="latte art"></a>
         <p>All of our baristas are deeply passionate for our drinks, so you can guarantee an expertly crafted beverage every time. Whether you order a speciality hot chocolate or a flat white, you can be sure it'll be made with love.</p>
-      </section>
+      </div>
     </div>
-  </div>
+  </section>
 
-
-  <div id="gallery" class="content">
+<div class="switchbar" id="gallery"></div>
+  <section class="gallery content">
     <div class="imagegrid">
       <img src="/assets/img/barista-1-min.jpeg" alt="barista" class="mySlides fade">
       <img src="/assets/img/coffeeandcake-1-min.jpg" alt="coffee and cake" class="mySlides fade">
@@ -102,57 +115,66 @@
       <img src="/assets/img/latteart-2-min.jpg" alt="latte art" class="mySlides fade">
       <img src="/assets/img/severalcoffees-1-min.jpg" alt="coffees" class="mySlides fade">
     </div>
-  </div>
+  </section>
 
-  <div id="section-c" class="content">
+<div class="switcher" id="info"></div>
+  <section class="section-c content">
     <div class="c1" id="c1">
-      <section id="secCcontent">
+      <div class="secCcontent">
         <h3>Our coffee</h3>
         <p>We get our coffee from local roasting experts who make sure we get the best. Variety is the spice of live, and we have new beans featured from independent roasters every week.</p>
-        <p><img src="/assets/img/coffeebeans-2-min.jpg" alt="coffee beans"> Whether you like a rich, Italian dark roast with Brazillian beans or a more subtle, complex light roast from Kenyan farms, we have you covered!</p>
+        <img src="/assets/img/coffeebeans-2-min.jpg" alt="coffee beans">
+        <p>Whether you like a rich, Italian dark roast with Brazillian beans or a more subtle, complex light roast from Kenyan farms, we have you covered!</p>
         <p>labore ipsum quid nisi nulla esse tamen minim noster minim cillum tamen export summis aliqua fore tempor anim aliqua tempor quorum dolore tempor ipsum export velit nisi irure quem fore</p>
-      </section>
+      </div>
     </div>
     <div class="c3" id="c3">
-      <section id="secCcontent">
+      <div class="secCcontent">
         <h3>Our Food</h3>
         <p>Our offerings span delicious classics such as Victoria sponge cake to modern twists like our kumquat tartlets. You can always guarantee we'll have something you like.</p>
-        <p><img src="/assets/img/cake-2-min.jpeg" alt="cake"> Our savouries include incredible breakfast burritos to inventive toasted cubanos sandwiches. We make all of our food on site, so if you want anything chopped or changed, let us know!</p>
+        <img src="/assets/img/cake-2-min.jpeg" alt="cake">
+        <p>Our savouries include incredible breakfast burritos to inventive toasted cubanos sandwiches. We make all of our food on site, so if you want anything chopped or changed, let us know!</p>
         <p>quem labore multos legam sunt dolor esse legam culpa anim irure aute cillum culpa ipsum tempor veniam sunt amet malis ipsum quem quis nisi sunt fore enim dolore export dolore</p>
-      </section>
+      </div>
     </div>
     <div class="c2" id="c2">
-      <section id="secCcontent">
+      <div class="secCcontent">
         <h3>Our drinks</h3>
         <p>The team at Joe's know and love coffee. They regularly attend teaching sessions at the country's best barista academies, so you can be sure your coffee will be perfect to take away or to stay.</p>
-        <p><img src="/assets/img/espressomachine-3-min.jpg" alt="espresso machine"> We ensure that every plastic we use comes from biogredable origin, so that we can minimise our impact on this beautiful world.</p>
+        <img src="/assets/img/espressomachine-3-min.jpg" alt="espresso machine">
+        <p> We ensure that every plastic we use comes from biogredable origin, so that we can minimise our impact on this beautiful world.</p>
         <p>malis anim tamen quem fore culpa dolor labore esse nulla illum fore nulla cillum fugiat sint quem nisi noster aliqua minim quem quis summis irure fore eram illum fugiat quis</p>
         <p>malis anim aute duis elit quem eram nulla nulla noster malis irure quid nulla minim culpa sint legam quorum duis</p>
-      </section>
+      </div>
     </div>
-  </div>
+  </section>
 
-  <div id="contactus" class="content">
+<div class="switchbar" id="contact"></div>
+  <section class="contactus content">
     <h2>Come and find us!</h2>
     <h3>Contact us below..</h3>
-    <form action="contact.php" id="form">
-      Name:<br>
-      <input type="text" name="name" placeholder="Your name.." class="submissionbox"><br> Email:
-      <br>
-      <input type=text name="email" placeholder="Your email.." class="submissionbox"><br> Your message:<br>
-      <textarea rows="4" , columns="10" placeholder="Your message.." class="detailsbox" name="details"></textarea><br>
-      <input type="submit" value="Send" class="submitbutton">
-    </form>
+    <div class="contactwrap">
+      <div class="contactform">
+        <form action="contact.php" class="form">
+          Name:<br>
+          <input type="text" name="name" placeholder="Your name.." class="submissionbox"><br> Email:
+          <br>
+          <input type=text name="email" placeholder="Your email.." class="submissionbox"><br> Your message:<br>
+          <textarea rows="4" , columns="10" placeholder="Your message.." class="detailsbox" name="details"></textarea><br>
+          <input type="submit" value="Send" class="submitbutton">
+        </form>
+      </div>
+    </div>
     <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1242.6592966146252!2d-0.34320428788645824!3d51.4706661184184!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48760ce2c4426beb%3A0xb033746b957c62b0!2s51+Woodland+Gardens%2C+Isleworth+TW7+6LW!5e0!3m2!1sen!2suk!4v1533718992664"
       allowfullscreen></iframe>
-  </div>
+  </section>
 
-  <div id="bottombar">
+  <section class="bottombar">
     <h3>Joe's Cafe</h3>
-    <p>51, Woodland Gardens</p>
-    <p>London, UK</p>
-    <p style="font-size: 0.5em; padding-top: 0.5em">JL Web Design</p>
-  </div>
+    <h4>51, Woodland Gardens</h4>
+    <h4>London, UK</h4>
+    <p class="jlweb">A website by <a href="https://joelangleywebdesign.000webhostapp.com/">Joe Langley</a>.</p>
+  </section>
 
 </body>
 
